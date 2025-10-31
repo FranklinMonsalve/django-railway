@@ -1,0 +1,1 @@
+web: p django_project.wsgi
