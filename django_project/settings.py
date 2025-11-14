@@ -130,6 +130,6 @@ STORAGES = {
 }
 # Default primary key field type
 # https://docs.djangoproject.com/en/5.2/ref/settings/#default-auto-field
-ALLOWED_HOSTS = ['localhost','django-railway-production-d2c8.up.railway.app']
+ALLOWED_HOSTS = ['localhost','django-railway-production-2da7.up.railway.app']
 DEFAULT_AUTO_FIELD = 'django.db.models.BigAutoField'
 CSRF_TRUSTED_ORIGINS = ['http://*','https://django-railway-production-2da7.up.railway.app']
