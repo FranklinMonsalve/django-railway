@@ -29,7 +29,7 @@ SECRET_KEY = 'django-insecure-6)hru%$)^&k^y%gpz+f3)9w+m*3gjqtry6f)0&tv%65+2m7(!d
 # SECURITY WARNING: don't run with debug turned on in production!
 DEBUG = True
 
-ALLOWED_HOSTS = ['127.0.0.1','django-railway-production-2da7.up.railway.app']
+ALLOWED_HOSTS = ['*']
 
 
 # Application definition
@@ -80,6 +80,7 @@ WSGI_APPLICATION = 'django_project.wsgi.application'
 # https://docs.djangoproject.com/en/5.2/ref/settings/#databases
 DATABASES = {
     'default': dj_database_url.config(default=os.getenv('DATABASE_URL'))
+   
 }
 
 #postgresql://postgres:WprgNunViVpWilDRWalAwEaNgevikqSe@shortline.proxy.rlwy.net:20719/railway
@@ -130,6 +131,6 @@ STORAGES = {
 }
 # Default primary key field type
 # https://docs.djangoproject.com/en/5.2/ref/settings/#default-auto-field
-ALLOWED_HOSTS = ['localhost','django-railway-production-2da7.up.railway.app']
+ALLOWED_HOSTS = ['localhost','127.0.0.1','django-railway-production-2da7.up.railway.app']
 DEFAULT_AUTO_FIELD = 'django.db.models.BigAutoField'
 CSRF_TRUSTED_ORIGINS = ['http://*','https://django-railway-production-2da7.up.railway.app']
