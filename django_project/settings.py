@@ -42,7 +42,9 @@ INSTALLED_APPS = [
     'django.contrib.messages',
     'django.contrib.staticfiles',
     'blog',
-    'home', 
+    'home',
+    'tasks', 
+    'rest_framework',
 ]
 
 MIDDLEWARE = [
@@ -130,6 +132,6 @@ STORAGES = {
 }
 # Default primary key field type
 # https://docs.djangoproject.com/en/5.2/ref/settings/#default-auto-field
-ALLOWED_HOSTS = ['localhost','django-railway-production-2da7.up.railway.app']
+ALLOWED_HOSTS = ['localhost','127.0.0.1','django-railway-production-2da7.up.railway.app']
 DEFAULT_AUTO_FIELD = 'django.db.models.BigAutoField'
 CSRF_TRUSTED_ORIGINS = ['http://*','https://django-railway-production-2da7.up.railway.app']
